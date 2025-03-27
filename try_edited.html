@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Work Section - Dimension Style
+-->
+<html>
+	<head>
+		<title>Work Section</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			/* Dimension Template Styles */
+			body {
+				background-color: #1f1f1f; /* Dark background */
+				color: #ffffff; /* White text */
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 16px;
+				line-height: 1.75;
+				margin: 0;
+				padding: 0;
+			}
+
+			/* Header and Footer Margins */
+			.header-margin, .footer-margin {
+				height: 50px; /* Adjust this value to control the margin size */
+				background-color: transparent; /* Transparent background */
+			}
+
+			/* Work Section Container */
+			.work-section {
+				max-width: 1200px; /* Wider container */
+				margin: 0 auto; /* Center the container */
+				padding: 40px; /* Increased padding */
+				background-color: #2a2a2a; /* Slightly lighter dark background */
+				border-radius: 10px;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+			}
+
+			/* Heading */
+			.work-section h2 {
+				font-size: 2rem;
+				font-weight: 700;
+				margin-bottom: 20px;
+				color: #ffffff;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+
+			/* Work Grid Layout */
+			.work-grid {
+				display: flex;
+				flex-direction: column;
+				gap: 40px; /* Space between rows */
+			}
+
+			/* Work Row */
+			.work-row {
+				display: flex;
+				align-items: center;
+				gap: 20px; /* Space between image and text */
+			}
+
+			/* Alternate Row Layout */
+			.work-row:nth-child(odd) {
+				flex-direction: row; /* Image on the left, text on the right */
+			}
+
+			.work-row:nth-child(even) {
+				flex-direction: row-reverse; /* Image on the right, text on the left */
+			}
+
+			/* Image */
+			.work-row .image {
+				flex: 1; /* Take up equal space */
+			}
+
+			.work-row .image img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+			}
+
+			/* Text */
+			.work-row .text {
+				flex: 1; /* Take up equal space */
+			}
+
+			.work-row .text p {
+				font-size: 1rem;
+				line-height: 1.75;
+				margin-bottom: 20px;
+				color: #cccccc; /* Light gray text */
+			}
+
+			/* Links */
+			.work-row .text a {
+				color: #4caf50; /* Green accent color */
+				text-decoration: none;
+				transition: color 0.3s ease;
+			}
+
+			.work-row .text a:hover {
+				color: #66bb6a; /* Lighter green on hover */
+			}
+
+			/* Buttons */
+			.work-row .text .button {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #4caf50; /* Green accent color */
+				color: #ffffff;
+				border-radius: 5px;
+				text-transform: uppercase;
+				font-size: 0.9rem;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				transition: background-color 0.3s ease;
+			}
+
+			.work-row .text .button:hover {
+				background-color: #66bb6a; /* Lighter green on hover */
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header Margin -->
+		<div class="header-margin"></div>
+
+		<!-- Work Section -->
+		<div class="work-section">
+			<h2>Azzia</h2>
+			<div class="work-grid">
+				<!-- Row 1: Image Left, Text Right -->
+				<div class="work-row">
+					<div class="image">
+						<img src="images/pic02.jpg" alt="Work Image 1" />
+					</div>
+					<div class="text">
+						<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+					</div>
+				</div>
+
+				<!-- Row 2: Image Right, Text Left -->
+				<div class="work-row">
+					<div class="image">
+						<img src="images/pic03.jpg" alt="Work Image 2" />
+					</div>
+					<div class="text">
+						<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.</p>
+						
+					</div>
+				</div>
+
+				<!-- Row 3: Image Left, Text Right -->
+				<div class="work-row">
+					<div class="image">
+						<img src="images/pic04.jpg" alt="Work Image 3" />
+					</div>
+					<div class="text">
+						<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+						
+					</div>
+				</div>
+
+				<!-- Row 4: Image Right, Text Left -->
+				<div class="work-row">
+					<div class="image">
+						<img src="images/pic05.jpg" alt="Work Image 4" />
+					</div>
+					<div class="text">
+						<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.</p>
+						
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Margin -->
+		<div class="footer-margin"></div>
+
+	</body>
+</html>
