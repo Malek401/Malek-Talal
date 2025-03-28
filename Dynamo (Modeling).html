@@ -107,6 +107,48 @@
 			.work-section .button:hover {
 				background-color: #66bb6a; /* Lighter green on hover */
 			}
+			* ======================
+   Mobile Responsiveness
+   ====================== */
+@media (max-width: 768px) {
+  /* Stack all rows vertically on mobile */
+  .work-row {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+  
+  /* Adjust section padding */
+  .work-section {
+    padding: 20px;
+    margin: 0 10px; /* Small side margins */
+  }
+  
+  /* Make return button more mobile-friendly */
+  .return-button {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  /* Slightly reduce heading size */
+  .work-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Ensure images don't overflow */
+  .work-row .image img {
+    max-width: 100%;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .work-section {
+    padding: 30px;
+  }
+}
 		</style>
 	</head>
 	<body>
